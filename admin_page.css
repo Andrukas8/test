@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  background-color: rgb(121, 121, 121);
+  /*#797979	*/
+  color: rgb(71, 71, 71);
+  min-width: 1025px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-radial-gradient(550px -200px, circle farthest-side, #ffffff, #797979);
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(71, 71, 71);
+  margin-bottom: auto;
+  margin-top: auto;
+  display: block;
+  line-height: 36px;
+}
+
+.website-width {
+  width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  color: rgb(71, 71, 71);
+  /*gray*/
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+a:link {
+  color: rgb(71, 71, 71);
+  /*gray*/
+}
+
+a:hover {
+  color: rgb(55, 55, 55);
+  /*darker gray*/
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+/*hiding text*/
+.text-hide {
+  font-size: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/*========================*/
+/*     styling header     */
+/*========================*/
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .logo {
+  float: left;
+}
+
+
+header .admin-button {
+  float: right;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+header .admin-button .welcome-admin {
+ color: rgb(204,204,204);
+ display: inline-block;
+}
+
+header .admin-button .welcome-admin span{
+ color: rgb(255,255,255);
+}
+
+header .admin-button .admin-button-icon {
+ display: inline-block;
+ background: url('pics/sprite.png') no-repeat 0 0;
+ width: 46px;
+ height: 48px;
+}
+
+
+/*========================*/
+/*    navigation bar      */
+/*========================*/
+
+section .nav-panel {
+  margin-top: 24px;
+  padding: 0;
+  color: rgb(75, 74, 74);
+  font-size: 16px;
+}
+
+section .nav-panel .menu-wrapper {
+  height: auto;
+  padding: 0;
+}
+
+section .nav-panel .menu-wrapper .menu-item {
+  float: left;
+  list-style: none;
+  background-color: rgb(233, 233, 233);
+  height: 2.3em;
+  border-radius: 3px 3px 0 0;
+  margin-top: 5px;
+}
+
+
+section .nav-panel .menu-wrapper .menu-item a {
+  display: block;
+  padding: 10px 10px 15px 10px;
+  margin-bottom: auto;
+  margin-top: auto;
+  transition: background-color 0.2s linear;
+  line-height: 22px;
+  clear: both;
+}
+
+section .nav-panel .menu-wrapper .menu-item a span {
+  display: inline-block;
+  padding: 0;
+  width: 24px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+
+section .nav-panel .menu-wrapper .menu-item .home-icon {
+  background: url('pics/sprite.png') no-repeat -52px -30px;
+}
+
+
+section .nav-panel .menu-wrapper .menu-item .add-user-icon {
+  background: url('pics/sprite.png') no-repeat -78px -27px;
+}
+
+section .nav-panel .menu-wrapper .menu-item .add-salesperson-icon {
+  background: url('pics/sprite.png') no-repeat -104px -27px;
+}
+
+section .nav-panel .menu-wrapper .menu-item .all-users-icon {
+  background: url('pics/sprite.png') no-repeat -136px -27px;
+}
+
+section .nav-panel .menu-wrapper .menu-item .all-salespersons-icon {
+  background: url('pics/sprite.png') no-repeat -166px -27px;
+}
+
+section .nav-panel .menu-wrapper .menu-item .top-users-icon {
+  background: url('pics/sprite.png') no-repeat -196px -27px;
+}
+
+section .nav-panel .menu-wrapper .menu-item .all-booking-request-icon {
+  background: url('pics/sprite.png') no-repeat -226px -28px;
+}
+
+section .nav-panel .menu-wrapper .menu-item a:hover {
+  background-color: rgb(250, 250, 250);
+  border-radius: 3px 3px 0 0;
+}
+
+section .nav-panel .menu-wrapper .menu-item.active {
+  background-color: rgb(250, 250, 250);
+  height: 2.5em;
+  margin-top: 2px;
+}
+
+section .nav-panel .menu-wrapper .menu-item a img {
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+
+/*========================*/
+/*    styling the form    */
+/*========================*/
+
+section .form-wrapper {
+  background-color: rgb(250, 250, 250);
+  border-radius: 3px;
+  height: auto;
+  padding: 30px 20px 40px 20px;
+  /*shadow*/
+  box-shadow: 1px 1px 4px 1px rgba(7, 7, 7, 0.56);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(7, 7, 7, 0.56);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(7, 7, 7, 0.56);
+}
+
+section .form-wrapper .edit-user-profile-icon {
+  background: url('pics/sprite.png') no-repeat -251px -10px;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+section .form-wrapper h2 {
+  display: inline-block;
+  font-size: 30px;
+}
+
+section .form-wrapper .user-form .form-inputs {
+  padding: 10px 10px 10px 20px;
+  background-color: rgb(237, 237, 237);
+  margin-top: 17px;
+  font-size: 18px;
+}
+
+section .form-wrapper .user-form .form-inputs label {
+  display: block;
+}
+
+section .form-wrapper .user-form .form-inputs input[type=text] {
+  width: 300px;
+  height: 30px;
+  border: none;
+  color: rgb(75, 74, 74);
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+section .form-wrapper .user-form .form-inputs input[type=password] {
+  width: 300px;
+  height: 30px;
+  border: none;
+  color: rgb(75, 74, 74);
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section .form-wrapper .user-form .form-inputs select {
+  width: 300px;
+  height: 30px;
+  border: none;
+  color: rgb(75, 74, 74);
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("pics/select_list_icon.png") no-repeat right;
+  background-position: right 5px center;
+  background-color: white;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+/*removing the default arrow of the drop-down select - works for IE10+*/
+section .form-wrapper .user-form .form-inputs select::-ms-expand {
+display: none;
+}
+
+
+section .form-wrapper .user-form .form-inputs span {
+  color: rgb(227, 51, 0);
+}
+
+section .form-wrapper .user-form .form-inputs .form-row {
+  clear: both;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col {
+  float: left;
+  width: 32%;
+  margin-left: 15px;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col:first-child {
+  margin-left: 0;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col .radio-btn-wrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col input[type=radio] {
+  vertical-align: middle;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col .radio-btn-label {
+  display: inline;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col input[type=checkbox] {
+  vertical-align: middle;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col .checkbox-wrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section .form-wrapper .user-form .form-inputs .form-row .form-col .checkbox-label {
+  display: inline;
+  font-size: 14px;
+  margin-left: 7px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+
+/*========================*/
+/*  styling the table     */
+/*========================*/
+
+section .form-wrapper .table-wrapper {
+  padding: 20px;
+}
+
+section .form-wrapper .table-wrapper h3 {
+  font-size: 18px;
+  color: rgb(42, 42, 42);
+}
+
+section .form-wrapper .table-wrapper .carriersSelected {
+  margin-top: 10px;
+  width: 100%;
+  border-spacing: 0;
+  color: rgb(42, 42, 42);
+  font-weight: normal;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+section .form-wrapper .table-wrapper .carriersSelected .add-carrier {
+  /*Add Carrier link*/
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  color: rgb(44, 155, 229);
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+section .form-wrapper .table-wrapper .carriersSelected th {
+  border: 1px solid rgb(235, 235, 235);
+  background-color: rgb(235, 235, 235);
+  text-align: left;
+  padding-left: 10px;
+    
+}
+
+section .form-wrapper .table-wrapper .carriersSelected tr, td {
+  border: 1px solid rgb(215, 213, 214);
+  height: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+/*setting background-colors of rows*/
+
+section .form-wrapper .table-wrapper .carriersSelected tr:nth-child(even) {
+  background-color: rgb(250, 250, 250);
+}
+
+section .form-wrapper .table-wrapper .carriersSelected tr:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
+}
+
+section .form-wrapper .table-wrapper .carriersSelected .table-carrier {
+  width: 47.9%;
+}
+
+
+section .form-wrapper .table-wrapper .carriersSelected .table-apply-profit {
+  text-align: center;
+}
+
+section .form-wrapper .table-wrapper .carriersSelected .table-remove-record {
+  text-align: center;
+}
+
+
+section .form-wrapper .table-wrapper .carriersSelected .green-arrow-icon {
+  display: inline-block;
+  background: url('pics/sprite.png') no-repeat -316px -34px;
+  width: 9px;
+  height: 13px;
+}
+
+section .form-wrapper .table-wrapper .carriersSelected .red-cross-icon {
+  display: inline-block;
+  background: url('pics/sprite.png') no-repeat -331px -34px;
+  width: 13px;
+  height: 13px;
+}
+
+section .copyright {
+  font-size: 12px;
+  color: rgb(204, 204, 204);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*========================*/
+/*          buttons       */
+/*========================*/
+
+section .form-wrapper .user-form .form-buttons-wrapper {
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px;
+  display: block;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .form-buttons {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgb(234, 235, 237);
+  border: 2px solid rgb(234, 235, 237);
+  border-radius: 7px;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .form-buttons .button {
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(234, 235, 237);
+  border-radius: 7px;
+  height: 45px;
+  margin: 0;
+  float: left;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .form-buttons input[type=submit] {
+  width: 72px;
+  font-size: 24px;
+  color: rgb(44, 155, 229);
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .form-buttons .reset-button {
+  width: 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .form-buttons .reset-button .reset-button-icon {
+  display: inline-block;
+  background: url('pics/sprite.png') no-repeat -366px -24px;
+	width: 23px;
+	height: 23px;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .required-fields {
+  text-align: left;
+  height: auto;
+  margin-top: -35px;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .required-fields .red-star-icon {
+ display: inline-block;
+  background: url('pics/sprite.png') no-repeat -349px -35px;
+  width: 13px;
+  height: 12px;
+}
+
+section .form-wrapper .user-form .form-buttons-wrapper .required-fields p {
+  font-size: 14px;
+}
