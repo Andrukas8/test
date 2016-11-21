@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Admin Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="admin_page.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="content">
+    <header class="header-wrapper website-width clearfix">
+      <img class="logo" src="pics/logo_admin.png" alt="Global Forwarding Admin Panel">
+      <div class="admin-button clearfix">
+        <p class="welcome-admin">Welcome: <span>Admin</span><span class="admin-button-icon"></span></p>
+
+      </div>
+    </header>
+
+    <section class="website-width clearfix">
+      <!-- navigation panel with rounded corners -->
+      <div class="nav-panel">
+
+        <ul class="menu-wrapper clearfix">
+          <li class="menu-item">
+            <a href="#">
+              <span class="home-icon"></span>Home</a>
+          </li>
+          <li class="menu-item active">
+            <a href="#">
+              <span class="add-user-icon"></span>Add User</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="add-salesperson-icon"></span>Add Sales Person</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="all-users-icon"></span>All Users</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="all-salespersons-icon"></span>All Sale Person</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="top-users-icon"></span>Top Users</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="all-booking-request-icon"></span>All Booking Request</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end of navigation -->
+      <!-- FORM -->
+
+      <div class="form-wrapper">
+
+        <span class="edit-user-profile-icon"></span>
+
+        <h2>Edit user profile</h2>
+        <form class="user-form" action="#" method="post">
+          <div class="form-inputs clearfix">
+            <!-- first row -->
+            <div class="form-row">
+              <div class="form-col">
+                <label for="userName">User name<span>*</span></label>
+                <input type="text" name="userName" id="userName" value="">
+              </div>
+
+              <div class="form-col">
+                <label for="fullName">Full Name<span>*</span></label>
+                <input type="text" name="fullName" id="fullName" value="">
+              </div>
+
+              <div class="form-col">
+                <label for="email">Email<span>*</span></label>
+                <input type="text" name="email" id="email" value="">
+              </div>
+            </div>
+            <!-- second  row -->
+            <div class="form-row">
+              <div class="form-col">
+                <label for="companyName">Company name<span>*</span></label>
+                <input type="text" name="companyName" id="companyName" value="">
+              </div>
+
+              <div class="form-col">
+                <label>Country<span>*</span></label>
+                <select>
+                          <option value="placeholder1">United States</option>
+                          <option value="placeholder2">placeholder2</option>
+                          <option value="placeholder3">placeholder3</option>
+                    </select>
+              </div>
+
+              <div class="form-col">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" value="">
+              </div>
+            </div>
+            <!-- third  row -->
+            <div class="form-row">
+              <div class="form-col">
+                <label for="telNumber">Tel #</label>
+                <input type="text" name="telNumber" id="telNumber" value="">
+              </div>
+              <div class="form-col">
+                <label for="userName">Add profit on<span>*</span></label>
+                <div class="radio-btn-wrapper">
+
+                  <label class="radio-btn-label">
+<input type="radio" name="addProfitOn" value="Carrier contract" checked> Carrier contract
+                  </label>
+
+                  <label class="radio-btn-label">
+<input type="radio" name="addProfitOn" value="Commodity type"> Commodity type
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-col">
+                <label for="userName">Add profit on<span>*</span></label>
+                <div class="radio-btn-wrapper">
+                  <label class="radio-btn-label">
+                    <input type="radio" name="profitMarginBy" value="Lumpsum" checked> Lumpsum
+                  </label>
+                  <label class="radio-btn-label">
+                     <input type="radio" name="profitMarginBy" value="Percentage"> Percentage
+                   </label>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fourth row -->
+            <div class="form-row">
+              <div class="form-col">
+                <label>Alocate sales person</label>
+                <select>
+                    <option value="placeholder1">Select sales person</option>
+                    <option value="placeholder2">placeholder2</option>
+                    <option value="placeholder3">placeholder3</option>
+                </select>
+              </div>
+
+              <div class="form-col">
+                <label for="gfContPersonName">GF contact person name</label>
+                <input type="text" name="gfContPersonName" id="gfContPersonName" value="">
+              </div>
+
+              <div class="form-col">
+                <label for="gfContPersonEmailID">GF contact person email id</label>
+                <input type="text" name="gfContPersonEmailID" id="gfContPersonEmailID" value="">
+              </div>
+
+            </div>
+          </div>
+          <!-- end of form inputs -->
+
+          <div class="table-wrapper">
+            <h3>Carriers selected for this user</h3>
+            <table class="carriersSelected">
+              <thead>
+                <tr>
+                  <th class="table-record-number">#</th>
+                  <th class="table-carrier">Carrier<a class="add-carrier" href="#">Add carrier</a></th>
+                  <th class="table-20std">20 STD</th>
+                  <th class="table-20ref">20 REF</th>
+                  <th class="table-40std">40 STD</th>
+                  <th class="table-40ref">40 REF</th>
+                  <th class="table-45std">45 STD</th>
+                  <th class="table-45ref">45 REF</th>
+                  <th class="table-apply-profit">Apply Profit</th>
+                  <th class="table-remove-record"></th>
+                </tr>
+              </thead>
+
+              <tr>
+                <td class="table-record-number">1</td>
+                <td class="table-carrier">Antillean</td>
+                <td class="table-20std">$ 250</td>
+                <td class="table-20ref">$ 250</td>
+                <td class="table-40std">$ 300</td>
+                <td class="table-40ref">$ 300</td>
+                <td class="table-45std">$ 300</td>
+                <td class="table-45ref">$ 300</td>
+                <td class="table-apply-profit">
+                  <a class="green-arrow-icon" href="#"><span class="text-hide">Apply</span></a>
+                </td>
+                <td class="table-remove-record">
+                  <a class="red-cross-icon" href="#"><span class="text-hide">Remove</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-record-number">2</td>
+                <td class="table-carrier">China Shipping</td>
+                <td class="table-20std">$ 250</td>
+                <td class="table-20ref">$ 250</td>
+                <td class="table-40std">$ 250</td>
+                <td class="table-40ref">$ 250</td>
+                <td class="table-45std">$ 250</td>
+                <td class="table-45ref">$ 250</td>
+                <td class="table-apply-profit">
+                  <a class="green-arrow-icon" href="#"><span class="text-hide">Apply</span></a>
+                </td>
+                <td class="table-remove-record">
+                  <a class="red-cross-icon" href="#"><span class="text-hide">Remove</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-record-number">3</td>
+                <td class="table-carrier">China Shipping</td>
+                <td class="table-20std">$ 250</td>
+                <td class="table-20ref">$ 250</td>
+                <td class="table-40std">$ 250</td>
+                <td class="table-40ref">$ 250</td>
+                <td class="table-45std">$ 250</td>
+                <td class="table-45ref">$ 250</td>
+                <td class="table-apply-profit">
+                  <a class="green-arrow-icon" href="#"><span class="text-hide">Apply</span></a>
+                </td>
+                <td class="table-remove-record">
+                  <a class="red-cross-icon" href="#"><span class="text-hide">Remove</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-record-number">4</td>
+                <td class="table-carrier">China Shipping</td>
+                <td class="table-20std">$ 250</td>
+                <td class="table-20ref">$ 250</td>
+                <td class="table-40std">$ 250</td>
+                <td class="table-40ref">$ 250</td>
+                <td class="table-45std">$ 250</td>
+                <td class="table-45ref">$ 250</td>
+                <td class="table-apply-profit">
+                  <a class="green-arrow-icon" href="#"><span class="text-hide">Apply</span></a>
+                </td>
+                <td class="table-remove-record">
+                  <a class="red-cross-icon" href="#"><span class="text-hide">Remove</span></a>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+          <!-- end of table-wrapper -->
+          <div class="form-inputs clearfix">
+            <!-- lower form -->
+            <div class="form-row">
+              <div class="form-col">
+                <label for="accStatus">Account Status (Active or Disabled)</label>
+                <div class="checkbox-wrapper">
+                  <label class="checkbox-label">
+                      <input type="checkbox" name="accStatus" id="accStatus" value="" checked> Active</label>
+                </div>
+              </div>
+              <div class="form-col">
+                <label for="password">Password<span>*</span></label>
+                <input type="password" name="password" id="password" value="">
+              </div>
+              <div class="form-col">
+                <label for="retypePassword">Retype Password<span>*</span></label>
+                <input type="password" name="retypePassword" id="retypePassword" value="">
+              </div>
+            </div>
+          </div>
+          <!-- end of lower form-inputs -->
+
+
+          <!-- buttons -->
+
+          <div class="form-buttons-wrapper">
+
+            <div class="form-buttons clearfix">
+              <input type="submit" value="Save" class="button">
+              <button type="reset" class="button reset-button"><span class="reset-button-icon"></span><span class="text-hide">Reset</span></button>
+            </div>
+
+            <div class="required-fields">
+              <p>
+                <span class="red-star-icon"></span><span class="text-hide">*</span> - required fields
+              </p>
+            </div>
+
+          </div>
+          <!--end of buttons wrapper-->
+        </form>
+        <!-- end of form -->
+      </div>
+      <!-- end of form-wrapper -->
+
+      <p class="copyright">&copy; 2011. GlobalForwardings. All rights reserved.</p>
+
+    </section>
+  </div>
+  <!-- end of content -->
+</body>
+
+</html>
